@@ -1,3 +1,6 @@
 .idea
 .settings
-target
+targetworkspace
+.project
+.classpath
+workspace

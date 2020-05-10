@@ -89,6 +89,36 @@ public class AddTwoNumbers {
         }
         return preNode;
     }
+    public ListNode addTwoNumbers2(ListNode l1, ListNode l2) {
+        ListNode head = null;
+        ListNode last = null;
+        int carry = 0;
+        while (l1 != null || l2 != null) {
+            int temp = carry;
+            if (l1 != null) {
+                temp += l1.val;
+                l1 = l1.next;
+            }
+            if (l2 != null) {
+                temp += l2.val;
+                l2 = l2.next;
+            }
+            carry = temp / 10;
+            temp = temp % 10;
+            if (last == null) {
+                ListNode node = new ListNode(temp);
+                head = node;
+                last = node;
+            } else {
+                last.next = new ListNode(temp);
+                last = last.next;
+            }
+        }
+        if (carry != 0) {
+            last.next = new ListNode(carry);
+        }
+        return head;
+    }
 
     public static void main(String[] args) {
         AddTwoNumbers atn = new AddTwoNumbers();

@@ -7,7 +7,9 @@ import org.junit.Assert;
  * Time: 2020-05-03 21:59
  **/
 public class TemplateClass {
+
     public static void main(String[] args) {
+        TemplateClass tc = new TemplateClass();
 
     }
 }

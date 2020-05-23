@@ -28,6 +28,13 @@ public class StringToInt {
         for (int i = sb.length() - 1; i >= 0; i--) {
             result += (sb.charAt(i) - 48) * Math.pow(10, count);
             count++;
+            if (result > Integer.MAX_VALUE) {
+                if (negative) {
+                    return Integer.MIN_VALUE;
+                } else {
+                    return Integer.MAX_VALUE;
+                }
+            }
         }
         if (negative) {
             result = -result;

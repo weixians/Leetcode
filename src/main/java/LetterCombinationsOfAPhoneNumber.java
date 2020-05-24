@@ -8,10 +8,9 @@ import java.util.*;
  **/
 public class LetterCombinationsOfAPhoneNumber {
     List<String> result = new ArrayList<>();
+    static Map<Character, char[]> map = new HashMap<>();
 
-    public List<String> letterCombinations(String digits) {
-        StringBuilder sb = new StringBuilder();
-        Map<Character, char[]> map = new HashMap<>();
+    static {
         map.put('2', new char[]{'a', 'b', 'c'});
         map.put('3', new char[]{'d', 'e', 'f'});
         map.put('4', new char[]{'g', 'h', 'i'});
@@ -20,6 +19,9 @@ public class LetterCombinationsOfAPhoneNumber {
         map.put('7', new char[]{'p', 'q', 'r', 's'});
         map.put('8', new char[]{'t', 'u', 'v'});
         map.put('9', new char[]{'w', 'x', 'y', 'z'});
+    }
+
+    public List<String> letterCombinations(String digits) {
         List<Character> digitList = new ArrayList<>();
         for (int i = digits.length() - 1; i >= 0; i--) {
             digitList.add(digits.charAt(i));
@@ -37,9 +39,9 @@ public class LetterCombinationsOfAPhoneNumber {
         char c = digitList.remove(digitList.size() - 1);
         char[] chars = map.get(c);
         List<String> newResult = new ArrayList<>();
-        for (int i = 0; i < result.size(); i++) {
-            for (int j = 0; j < chars.length; j++) {
-                newResult.add(result.get(i) + chars[j]);
+        for (String s : result) {
+            for (char aChar : chars) {
+                newResult.add(s + aChar);
             }
         }
         result = newResult;

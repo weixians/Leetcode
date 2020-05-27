@@ -1,6 +1,6 @@
 /**
  * Program: LeetCode
- * Description: 模板类
+ * Description: Easy
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/

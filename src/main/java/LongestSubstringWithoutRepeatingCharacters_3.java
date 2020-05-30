@@ -7,7 +7,7 @@ import java.util.List;
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/
-public class LongestSubstringWithoutRepeatingCharacters {
+public class LongestSubstringWithoutRepeatingCharacters_3 {
     public int lengthOfLongestSubstring(String s) {
         List<Character> list = new ArrayList<>();
         int len = 0;
@@ -37,7 +37,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
     }
 
     public static void main(String[] args) {
-        LongestSubstringWithoutRepeatingCharacters tc = new LongestSubstringWithoutRepeatingCharacters();
+        LongestSubstringWithoutRepeatingCharacters_3 tc = new LongestSubstringWithoutRepeatingCharacters_3();
         System.out.println(tc.lengthOfLongestSubstring("abcabcbb"));
         System.out.println(tc.lengthOfLongestSubstring("bbbbb"));
         System.out.println(tc.lengthOfLongestSubstring("pwwkew"));

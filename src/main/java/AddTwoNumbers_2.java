@@ -4,7 +4,7 @@
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/
-public class AddTwoNumbers {
+public class AddTwoNumbers_2 {
 
     /**
      * 2ms
@@ -121,7 +121,7 @@ public class AddTwoNumbers {
     }
 
     public static void main(String[] args) {
-        AddTwoNumbers atn = new AddTwoNumbers();
+        AddTwoNumbers_2 atn = new AddTwoNumbers_2();
 
     }
 

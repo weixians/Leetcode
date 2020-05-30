@@ -1,12 +1,10 @@
-import org.junit.Assert;
-
 /**
  * Program: LeetCode
  * Description: 模板类
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/
-public class ZigzagConversion {
+public class ZigzagConversion_6 {
 
     public String convert(String s, int numRows) {
         //确定列数
@@ -70,7 +68,7 @@ public class ZigzagConversion {
     }
 
     public static void main(String[] args) {
-        ZigzagConversion tc = new ZigzagConversion();
+        ZigzagConversion_6 tc = new ZigzagConversion_6();
         String s = "A";
         System.out.println(tc.convert(s, 1));
     }

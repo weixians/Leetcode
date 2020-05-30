@@ -1,13 +1,10 @@
-import java.util.ArrayList;
-import java.util.List;
-
 /**
  * Program: LeetCode
  * Description: 模板类
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/
-public class LongestPalindromicSubstring {
+public class LongestPalindromicSubstring_5 {
     public String longestPalindrome(String s) {
         StringBuilder sb1 = new StringBuilder(s);
         StringBuilder sb2 = new StringBuilder(s);
@@ -39,7 +36,7 @@ public class LongestPalindromicSubstring {
     }
 
     public static void main(String[] args) {
-        LongestPalindromicSubstring tc = new LongestPalindromicSubstring();
+        LongestPalindromicSubstring_5 tc = new LongestPalindromicSubstring_5();
         String s = "dddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd";
         String res = tc.longestPalindrome(s);
         System.out.println(res);

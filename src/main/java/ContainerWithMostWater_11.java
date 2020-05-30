@@ -4,7 +4,7 @@
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/
-public class ContainerWithMostWater {
+public class ContainerWithMostWater_11 {
     /**
      * Brute Force办法，效率一般
      *
@@ -75,7 +75,7 @@ public class ContainerWithMostWater {
     }
 
     public static void main(String[] args) {
-        ContainerWithMostWater tc = new ContainerWithMostWater();
+        ContainerWithMostWater_11 tc = new ContainerWithMostWater_11();
         int[] height = new int[]{
                 1, 8, 6, 2, 5, 4, 8, 3, 7
         };

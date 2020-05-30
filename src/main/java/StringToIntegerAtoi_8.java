@@ -4,7 +4,7 @@
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/
-public class StringToInt {
+public class StringToIntegerAtoi_8 {
     public int myAtoi(String str) {
         str = str.trim();
         long result = 0;
@@ -49,7 +49,7 @@ public class StringToInt {
 
 
     public static void main(String[] args) {
-        StringToInt tc = new StringToInt();
+        StringToIntegerAtoi_8 tc = new StringToIntegerAtoi_8();
         String s = "-42";
         System.out.println(tc.myAtoi(s));
 

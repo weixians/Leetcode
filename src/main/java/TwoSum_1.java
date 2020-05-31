@@ -2,7 +2,14 @@ import java.util.Map;
 
 import java.util.HashMap;
 
-public class TwoSum {
+public class TwoSum_1 {
+    /**
+     * 参考自LeetCode的讨论区
+     * 思路：使用map记录所有的
+     * @param nums
+     * @param target
+     * @return
+     */
     public int[] twoSum(int[] nums, int target) {
         Map<Integer, Integer> map = new HashMap<>();
         for (int i = 0; i < nums.length; i++) {
@@ -30,7 +37,7 @@ public class TwoSum {
     }
 
     public static void main(String[] args) {
-        TwoSum ts = new TwoSum();
+        TwoSum_1 ts = new TwoSum_1();
         int[] nums = new int[]{2, 7, 11, 15};
         int[] result = ts.twoSum(nums, 9);
         System.out.println(result[0] + "," + result[1]);

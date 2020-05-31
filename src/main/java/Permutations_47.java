@@ -29,9 +29,9 @@ public class Permutations_47 {
             res.add(l);
             return;
         }
-        //用hashset可以防止和同一种元素重复交换，好方法！
         HashSet<Integer> set = new HashSet<>();
         for (int j = i; j < nums.length; j++) {
+            //不处理相同的子树
             if (set.add(nums[j])) {
                 swap(nums, i, j);
                 dfs(i + 1, nums);

@@ -26,19 +26,14 @@ public class SpiralMatrix_54 {
         int top = 0;
         int bottom = m - 1;
         int count = 0;
-        boolean stop = false;
         int len = m * n;
         while (true) {
             for (int i = left; i <= right; i++) {
                 res.add(matrix[top][i]);
                 count++;
                 if (count >= len) {
-                    stop = true;
-                    break;
+                    return res;
                 }
-            }
-            if (stop) {
-                break;
             }
             top += 1;
 
@@ -46,40 +41,27 @@ public class SpiralMatrix_54 {
                 res.add(matrix[i][right]);
                 count++;
                 if (count >= len) {
-                    stop = true;
-                    break;
+                    return res;
                 }
-            }
-            if (stop) {
-                break;
             }
             right -= 1;
             for (int i = right; i >= left; i--) {
                 res.add(matrix[bottom][i]);
                 count++;
                 if (count >= len) {
-                    stop = true;
-                    break;
+                    return res;
                 }
-            }
-            if (stop) {
-                break;
             }
             bottom -= 1;
             for (int i = bottom; i >= top; i--) {
                 res.add(matrix[i][left]);
                 count++;
                 if (count >= len) {
-                    stop = true;
-                    break;
+                    return res;
                 }
-            }
-            if (stop) {
-                break;
             }
             left += 1;
         }
-        return res;
     }
 
     public static void main(String[] args) {

@@ -4,7 +4,7 @@
  * Author: Weixian Shi
  * Time: 2020-05-03 21:59
  **/
-public class MinimumPathSum {
+public class MinimumPathSum_64 {
     public int minPathSum(int[][] grid) {
         int m = grid.length;
         int n = grid[0].length;
@@ -28,7 +28,7 @@ public class MinimumPathSum {
     }
 
     public static void main(String[] args) {
-        MinimumPathSum tc = new MinimumPathSum();
+        MinimumPathSum_64 tc = new MinimumPathSum_64();
 
     }
 }
